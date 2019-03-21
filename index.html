@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name ="Author" content="Jermaine Coates"/>
+        <title>Car Wash</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/index.js"></script>  
+    </head>
+
+    <body>        
+        <article class="hero-image">
+            <form>
+
+                <h1>Town & Country Car Wash </h1>
+                <div class="inputGroup">
+                    <input id="bodywash" name="bodywash" type="checkbox" onclick="findTotal()"/>
+                    <label for="bodywash">Body Wash $875.00</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="interior" name="interior" type="checkbox" onclick="findTotal()"/>
+                    <label for="interior">Interior $740.00</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="vacuum" name="vacuum" type="checkbox" onclick="findTotal()"/>
+                    <label for="vacuum">Vacuum & Polish $525.00</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="trunk" name="trunk" type="checkbox" onclick="findTotal()"/>
+                    <label for="trunk">Trunk Clean $650.00</label>
+                </div>
+                
+                <br>
+                <hr>
+                <br>
+                
+                                
+                <h1>
+                    Total:  <span id="total"> $0.00</span>
+                </h1>
+                
+                <br>
+                <hr>
+                 
+                <h1>Discount (Tick only One)</h1>
+                <div class="inputGroup">
+                    <input id="None" type="radio" name="discount" value="0" checked="checked" onclick="findTotal()">
+                    <label for="None">$0</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="150" type="radio" name="discount" value="150" onclick="findTotal()">
+                    <label for="150">$150</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="250" type="radio" name="discount" value="150" onclick="findTotal()">
+                    <label for="250">$250</label>
+                </div>                        
+                
+                <br>
+                <hr>
+                <br>
+                    
+                <h1>
+                    Final Total:  <span id="finaltotal"> $0.00</span>
+                </h1>
+
+                <br>
+                <hr>
+                       
+                </form>
+        </article>
+    </body>
+</html>
